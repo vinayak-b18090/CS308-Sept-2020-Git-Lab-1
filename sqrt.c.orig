@@ -1,0 +1,37 @@
+/* This program computes the square root of a
+positive number. */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+//Comment before main fuction
+int main(int argc, char* argv[]) {
+
+	if (argc != 2) {
+<<<<<<< HEAD
+		printf("DEBUG: Usage master: sqrt input\n\n");
+=======
+		printf("NEGSUPPORT: Usage NegativeSupport: sqrt input\n\n");
+>>>>>>> br_negativeSupport
+		exit(-1);
+	}
+
+	int input = atoi(argv[1]);
+	if(input<0){
+<<<<<<< HEAD
+        printf("DEBUG: Sqrt of %d is %fi\n",input,sqrt(-1*input));
+	}else{
+        printf("DEBUG: Sqrt of %d is %f\n",input,sqrt(input));
+	}
+	printf("DEBUG: End of program. Exiting.");
+=======
+        printf("NEGSUPPORT: Sqrt of %d is %fi\n",input,sqrt(-1*input));
+	}else{
+        printf("NEGSUPPORT: Sqrt of %d is %f\n",input,sqrt(input));
+	}
+	printf("NEGSUPPORT: End of program. Exiting.");
+>>>>>>> br_negativeSupport
+	return(0);
+
+} // end main
